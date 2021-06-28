@@ -14,7 +14,7 @@
 - DAO-layer: realization of CRUD-methods, custom methods
 ~~~~
 
-***Only authorized user can can make requests. Driver behaves as User.
+***Only authorized user can make requests. Driver behaves as User.
 
 
 ![pic](login_page.png)

@@ -8,11 +8,10 @@ import org.apache.logging.log4j.LogManager;
 import org.apache.logging.log4j.Logger;
 
 public class ConnectionUtil {
-    public static final String URL = "jdbc:mysql://localhost:3306/vehicle_fleet_db?"
-                                   + "useUnicode=true&serverTimezone=UTC";
-    public static final String USERNAME = "root";
-    public static final String PASSWORD = "wed12san";
-    public static final String JDBC_DRIVER = "com.mysql.cj.jdbc.Driver";
+    public static final String URL = "YOUR DATABASE URL";
+    public static final String USERNAME = "YOUR USERNAME";
+    public static final String PASSWORD = "YOUR PASSWORD";
+    public static final String JDBC_DRIVER = "YOUR DRIVER";
     private static final Logger logger = LogManager.getLogger(ConnectionUtil.class);
 
     static {
