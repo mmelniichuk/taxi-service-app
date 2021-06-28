@@ -32,15 +32,16 @@ public class LoginController extends HttpServlet {
     @Override
     protected void doPost(HttpServletRequest req, HttpServletResponse resp)
                                     throws ServletException, IOException {
-        logger.info("doPost method was called...");
         String login = req.getParameter("login");
         String password = req.getParameter("password");
         try {
             Driver driver = authenticationService.login(login, password);
             HttpSession session = req.getSession();
             session.setAttribute(DRIVER_ID_PARAMETER, driver.getId());
+            logger.info("login was successful.");
             resp.sendRedirect("/index");
         } catch (AuthenticationException e) {
+            logger.error("cannot login.", e);
             req.setAttribute("errorMessage", e.getMessage());
             req.getRequestDispatcher("/WEB-INF/views/login.jsp").forward(req, resp);
         }

@@ -38,9 +38,13 @@ public class AuthenticationFilter implements Filter {
         HttpSession session = request.getSession();
         Long driverId = (Long) session.getAttribute(DRIVER_ID_PARAMETER);
         if (driverId == null && !allowedUrls.contains(request.getServletPath())) {
+            logger.error("user not authenticated.");
             response.sendRedirect("/login");
             return;
         }
         filterChain.doFilter(request, response);
+        if (driverId != null) {
+            logger.info("user authenticated. Params: user id={} " + driverId);
+        }
     }
 }

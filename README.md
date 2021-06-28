@@ -6,7 +6,7 @@
 4.Project improvement
 ~~~~
 
-####1.About The Project
+#### 1.About The Project
 3-tier architecture WEB-project with Database connection.
 ~~~~
 - Controller-layer: processing requests from the user and generating a response
@@ -22,13 +22,14 @@ You can see all possible actions on the [index page]
 
 
 
-####2.Built With
+#### 2.Built With
 ~~~~
 - Maven
 - MySQL
 - TomCat
 ~~~~
 Technologies used: 
+~~~~
 - JDBC
 - WEB 
 - Servlets
@@ -38,8 +39,9 @@ Technologies used:
 - Dependency Injection
 - S.O.L.I.D
 - OOP principles 
+~~~~
 
-####3.Getting Started
+#### 3.Getting Started
 ###Installation
 ~~~~
 1. Clone the repo
@@ -49,7 +51,7 @@ Technologies used:
 5. Run Tomcat configuration
 ~~~~
 
-####4.Project improvement
+#### 4.Project improvement
 1. Write tests for project
 
 
