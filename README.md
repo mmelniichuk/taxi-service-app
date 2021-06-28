@@ -15,18 +15,24 @@
 ~~~~
 
 ***Only authorized user can can make requests. Driver behaves as User.
+
+
+![pic](login_page.png)
+
 To Register pass name, license number, login and password.
 Then to login.
 Use WEB-app freely.
 You can see all possible actions on the [index page]
 
 
+![pic](index_page.png)
+
 
 #### 2.Built With
 ~~~~
 - Maven
 - MySQL
-- TomCat
+- Tomcat
 ~~~~
 Technologies used: 
 ~~~~
@@ -42,7 +48,7 @@ Technologies used:
 ~~~~
 
 #### 3.Getting Started
-###Installation
+### Installation
 ~~~~
 1. Clone the repo
 2. Open scr/main/java/jdbc/util/ConnectionUtil and enter all necessary data
