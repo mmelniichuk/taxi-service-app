@@ -1,12 +1,19 @@
 .table_dark {
     font-family: "Lucida Sans Unicode", "Lucida Grande", Sans-Serif;
     width: 70%;
-    color: #CAD4D6;
+    color: white !important;
     font-size: 40px;
     text-align: center;
     border-collapse: collapse;
     background: #252F48;
     margin: auto;
+}
+.bottom {
+    color: white;
+    background-color: #252F48;
+}
+a:hover {
+    color: red;
 }
 .table_dark th {
     color: #EDB749;
